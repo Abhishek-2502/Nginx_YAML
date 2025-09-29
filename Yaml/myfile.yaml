@@ -1,0 +1,59 @@
+# This is a comment
+# Yet Another Markup Language
+
+
+  # Key: value
+course_name : "Django Backend Course"  # String
+version: 1.5                           # Float
+price: 199                             # Integer
+is_public: true                        # Boolean
+release_date: 2021-04-25 12:23:22      # Date
+pre_enroll: null                       # null
+tags:                                  #Array/list
+  - python
+  - django
+  - mysql 
+course_tag: ["Abhi","Jaya","Priya"]    #Array/list
+price1: &myprice 199                   #Variable storing 199
+ta_details:
+  - name: "Abhi"                       # Nested Array
+    age: 25
+    salary: 1111
+  - name: "Jaya"
+    age: 25
+    salary: *myprice                   # Nested Variable
+  - {name: "Priya", age: 25, salary: 6000} # Nested Dictionary
+
+
+#obj
+list_of_server :  
+  - server_1 :
+    name: "ec2"                    
+    volume: "8GB"
+  - server_2 :
+    name: "ec2"                    
+    volume: "16GB"
+
+
+short_description: >
+  Here is a short description 
+    it will print without newline and spaces
+
+long_description: |
+  Here is a long description 
+          it will print with newline and spaces
+
+process_payment: *myprice
+
+
+adv: &adv
+  mykey: myval
+  
+another_adv:
+  one: two
+  <<: *adv                             # Copy value from above adv
+
+    
+   
+    
+
