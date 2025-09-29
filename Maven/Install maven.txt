@@ -1,0 +1,4 @@
+# Install maven
+sudo apt install maven -y
+chmod +x mvnw   #Run where pom.xml is present
+
